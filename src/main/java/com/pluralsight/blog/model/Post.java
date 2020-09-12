@@ -31,6 +31,7 @@ public class Post {
     @ManyToOne(fetch = FetchType.EAGER)
     private Author author;
 
+
     public Post() {
         super();
     }
@@ -81,6 +82,7 @@ public class Post {
     public Author getAuthor(){ return author;}
 
     public void setAuthor(Author author){this.author = author;}
+
 
     @Override
     public boolean equals(Object obj) {
