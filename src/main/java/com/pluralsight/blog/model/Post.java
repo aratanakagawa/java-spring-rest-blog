@@ -18,10 +18,8 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Version
     private Long id;
-<<<<<<< HEAD
-    @Version private Long version;
-=======
->>>>>>> parent of dba5de7... Revert "Completed module"
+    @Version
+    private Long version;
     @NotNull
     @Size(min = 4, max = 100)
     private String title;
