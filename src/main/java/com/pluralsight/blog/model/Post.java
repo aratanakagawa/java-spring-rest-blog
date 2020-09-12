@@ -16,10 +16,7 @@ import java.util.List;
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Version
     private Long id;
-    @NotNull
-    @Size(min = 4, max = 100)
     private String title;
     @Column(length=1000000)
     @Lob
