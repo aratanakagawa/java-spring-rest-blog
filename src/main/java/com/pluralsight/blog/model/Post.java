@@ -16,8 +16,12 @@ import java.util.List;
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Version
     private Long id;
+<<<<<<< HEAD
     @Version private Long version;
+=======
+>>>>>>> parent of dba5de7... Revert "Completed module"
     @NotNull
     @Size(min = 4, max = 100)
     private String title;
