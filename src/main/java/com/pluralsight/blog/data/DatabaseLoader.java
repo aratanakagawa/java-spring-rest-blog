@@ -45,8 +45,8 @@ public class DatabaseLoader implements ApplicationRunner {
 
             String title = String.format(template, gadget);
             Post post = new Post(title, "Lorem ipsum dolor sit amet, consectetur adipiscing elit… ");
-            post.setAuthor(authors.get(i));
-            authors.get(i).addPost(post);
+//            post.setAuthor(authors.get(i));
+//            authors.get(i).addPost(post);
             randomPosts.add(post);
 
         });
